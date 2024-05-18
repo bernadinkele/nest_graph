@@ -1,0 +1,24 @@
+type Owner {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateOwnerInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateOwnerInput {
+  id: Int!
+}
+
+type Query {
+  owner: [Owner]!
+  owner(id: Int!): Owner
+}
+
+type Mutation {
+  createOwner(createOwnerInput: CreateOwnerInput!): Owner!
+  updateOwner(updateOwnerInput: UpdateOwnerInput!): Owner!
+  removeOwner(id: Int!): Owner
+}
